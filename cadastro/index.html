@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastre-se</title>
+    </head>
+    <body>
+        <style>/* Importação de fontes */
+            @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+            
+            /* Estilos para o body */
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                background: rgb(255, 255, 255); /* Cor de fundo branca */
+                font-family: 'Raleway', sans-serif; /* Fonte padrão */
+            }
+            
+            /* Container */
+            .container {
+                display: flex;
+                align-items: center; /* Centraliza elementos verticalmente */
+                text-align: center; /* Alinha texto centralmente */
+            }
+            
+            /* Formulário */
+            .formulario {
+                margin: 0;
+                width: 80%; /* Largura do formulário ajustada */
+                background: rgb(242, 242, 242);
+                padding: 20px; /* Espaçamento interno adicionado */
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra adicionada */
+            }
+            
+            .formulario .titulo h1 {
+                font-family: 'Raleway', sans-serif;
+                font-size: 40px; /* Tamanho da fonte ajustado */
+                margin: 0;
+            }
+            
+            .formulario .titulo h2 {
+                font-family: 'Amatic SC', cursive;
+                font-size: 24px; /* Tamanho da fonte ajustado */
+                margin: 0;
+            }
+            
+            /* Responsividade */
+            @media only screen and (max-width: 900px) {
+                .formulario {
+                    width: 100%;
+                }
+                .formulario .titulo h1 {
+                    font-size: 30px; /* Tamanho da fonte ajustado */
+                }
+                .formulario .titulo h2 {
+                    font-size: 18px; /* Tamanho da fonte ajustado */
+                }
+            }
+            </style>
+        <div class='container'>
+            <section class='formulario'>
+                <form>
+                    <div class='titulo'>
+                        <h1>Cadastro</h1>
+                        <h2>Os guerreiros Z estão esperando! Cadastre-se.</h2>
+                    </div>
+                    <section>
+                        <div>
+                            <label for='nome'><span>Nome</span></label>
+                            <label for='email'><span>E-mail</span></label>
+                            <label for='data'><span>Data de nascimento</span></label>
+                            <label for='estado'><span>Estado</span></label>
+                            <label for='senha'><span>Senha</span></label>
+                            <label for='confSenha'><span>Confirme a senha</span></label>
+                        </div>
+                        <div>
+                            <input type='text' placeholder='João Silva' id='nome' class='input' required/>
+                            <input type='email' placeholder='joao.silva@gmail.com' id='email' class='input' required/>
+                            <input type='date' placeholder='Jan 33, 1790' id='data' class='input' required/>
+                            <input type='text' placeholder='Rio de Janeiro' id='estado' class='input' required/>
+                            <input type='password' placeholder='Senha' id='senha' class='input' required/>
+                            <input type='password' placeholder='Senha' id='confSenha' class='input' required/>
+                            <button type='submit'>Cadastrar</button>
+                        </div>
+                    </section>
+                </form>
+            </section>
+            <section class='flier'>
+                <div class='flier-overlay'>
+                    <header>
+                        <a href='#'>
+                            <img src='imgs/' alt='botão de menu' />
+                        </a>
+                        <span></span>
+                    </header>
+                    <main>
+                        <section>
+                            <span>ENCONTRE AS ESFERAS DO DRAGÃO</span>
+                            <h1></h1>
+                        </section>
+                        <span>ENFRENTE INIMIGOS</span>
+                    </main>
+                </div>
+                <img src='imgs/dragon-ball-z.jpg' alt=''/>
+            </section>
+        </div>
+    </body>
+</html>
